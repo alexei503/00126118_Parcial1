@@ -351,9 +351,10 @@ footer .social-links {
         padding-bottom: 10px /*separacion de palabra*/
         }       
         .post>ul li{
-        padding: 0% 20px; /*ajustar el ancho de las publicaciones*/
+        padding-inline:20px; /*ajustar el ancho de las publicaciones*/
+        padding-bottom: 25px;
         margin: 0% 40px /*ajustar la separacion de las publicaciones*/
-        ju
+        
         }
         section.about>div.container{
             display: grid; 
