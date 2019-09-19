@@ -261,6 +261,59 @@ footer .social-links {
 }
 
 /* Pesonalizando estilo para tablets*/
+.social-links{
+    box-sizing: content-box;
+    margin: 1% 0% 2%;
+ }
+ .show-desktop i{
+     font-size: 3em;
+     margin: 1% 0% 5%;
+     color: #0AC693;
+}
+
+.container>p{
+    padding: 0%
+}
+.container>.social-links>li>a>i{
+ display: flex;
+ padding-inline: 15px; 
+ padding-bottom: 15px;
+ font-size: 2em ;
+ box-sizing: border-box;
+ margin: 10% 0% 35%; 
+}
+
+footer>.social-links>li>a>i{
+    display: flex;
+    padding-inline: 15px; 
+
+    font-size: 2em ;
+    box-sizing: border-box;
+    margin: 35% 0% 0%; 
+   }
+   footer>p{
+    padding-top: 0%;
+   }
+
+.contact-form>LABEL{
+    font-weight: 900;
+
+}
+
+section.about>div.container{
+    
+    padding-bottom: 2em;
+}
+.green-area .post li{
+    box-sizing: border-box;
+    margin: 2rem 10%;
+    
+}
+
+.post article p{
+    line-height: 15px
+}
+
 @media only screen and (min-width: 768px) {
   
     .post ul {
@@ -280,7 +333,7 @@ footer .social-links {
 
     .logo {
         width: 150px;
-        margin: 1.5em;
+        margin: 5em;
     }
 
     .show-desktop {
@@ -308,16 +361,44 @@ footer .social-links {
         
         }
 
-    /*TODO: FALTA CSS */
+        h2{
+            height: 50px;
+        }
+
+        .contact-form>LABEL{
+            font-weight: 900;
+
+        }
+
+        .social-links{
+            box-sizing: content-box;
+            margin: 2% 0% 2%;
+         }
+           /*TODO: FALTA CSS */
 } 
 
 @media only screen and (min-width: 1024px) {
 
+    h2{
+        height: 50px;
+    }
        /*TODO: FALTA CSS */
-       footer>.social-links>li{
-        display: flexbox;
+
+       .social-links{
+           box-sizing: content-box;
+           margin: 0% 0% 2%;
+        }
+        .show-desktop i{
+            font-size: 3em;
+            margin: 1% 0% 5%;
+            color: #0AC693;
+       }
+       .social-links>li>a>i{
+        display: flex;
         padding-inline: 30px; 
-        font-size: 3em ;
+        font-size: 2em ;
+        box-sizing: border-box;
+        margin: 30% 0% 0%; 
     }
        
        #menu li a:hover{
@@ -325,14 +406,45 @@ footer .social-links {
         
         }
 
+        section.about>div.container{
+            display: grid; /*para formar celdas*/
+            grid-template-columns: 1fr 1fr ;
+            grid-gap: 50px;
+            grid-template: auto;
+            padding-bottom: 5em;
+        }
+        div.container>h2{
+            grid-column: 1/3;
+            grid-row: 1/1;
+        }
+        div.container>div.bio-info{
+            grid-column: 1/2;
+            grid-row: 2;
+        }
+
+        div.container>div.contact{
+            grid-column: 2/3;
+            grid-row: 2/2;
+            
+        }
+        .contact-form>LABEL{
+            font-weight: 900;
+
+        }
+        .contact-form>input[type=submit]{
+            width: 35%;
+            font-weight: 100;
+        }
 }
 
 @media only screen and (min-width: 1440px) {
 
     /*TODO: FALTA CSS */
 
-    
-
+    .social-links{
+        box-sizing: content-box;
+        margin: 0% 0% 2%;
+     }
   
     .container {
         width: 80%;
@@ -378,10 +490,11 @@ footer .social-links {
             
         }
 
-        footer>.social-links>li{
-            display: flexbox;
-            padding-inline: 30px; 
-            font-size: 3em ;
+        .social-links{
+            box-sizing: content-box;
+            border: 1% 0% 2%;
         }
+
+        
         
 }
