@@ -357,7 +357,7 @@ footer .social-links {
         
         }
         section.about>div.container{
-            display: grid; 
+            display: grid; /*para formar celdas*/
             grid-template-columns: 1fr 1fr ;
             grid-gap: 50px;
             grid-template: auto;
