@@ -306,9 +306,13 @@ section.about>div.container{
 }
 .green-area .post li{
     box-sizing: border-box;
-    margin: 2rem 10%;
-    
+    margin-top: 2rem ;
+    margin-bottom: 2rem;
+    padding-right: 15px;
+    padding-left: 15px;
 }
+
+
 
 .post article p{
     line-height: 15px
@@ -377,6 +381,29 @@ section.about>div.container{
            /*TODO: FALTA CSS */
 } 
 
+section.about>div.container{
+    display: grid; /*para formar celdas*/
+    grid-template-columns: 1fr 1fr ;
+    grid-gap: 50px;
+    grid-template: auto;
+    padding-bottom: 5em;
+}
+div.container>h2{
+    grid-column: 1/3;
+    grid-row: 1/1;
+    margin: 0% auto;
+}
+div.container>div.bio-info{
+    grid-column: 1/2;
+    grid-row: 2;
+}
+
+div.container>div.contact{
+    grid-column: 2/3;
+    grid-row: 2/2;
+    
+}
+
 @media only screen and (min-width: 1024px) {
 
     h2{
@@ -384,9 +411,21 @@ section.about>div.container{
     }
        /*TODO: FALTA CSS */
 
+       .container>.header img{
+        margin-top: 2em;
+    }
+
+    .container>.header nav{
+        margin-right: 8em;
+    }
+
+    .big-hero>.container img{
+        margin-bottom: 2em;
+    }
+
        .social-links{
            box-sizing: content-box;
-           margin: 0% 0% 2%;
+           margin: 1% 0% 1%;
         }
         .show-desktop i{
             font-size: 3em;
@@ -416,6 +455,7 @@ section.about>div.container{
         div.container>h2{
             grid-column: 1/3;
             grid-row: 1/1;
+            margin: 0% auto;
         }
         div.container>div.bio-info{
             grid-column: 1/2;
@@ -440,10 +480,21 @@ section.about>div.container{
 @media only screen and (min-width: 1440px) {
 
     /*TODO: FALTA CSS */
+    .container>.header img{
+        margin-top: 2em;
+    }
 
+    .container>.header nav{
+        margin-right: 10em;
+    }
+
+    .big-hero>.container img{
+        margin-bottom: 2em;
+    }
+    
     .social-links{
         box-sizing: content-box;
-        margin: 0% 0% 2%;
+        margin: 2% 0% 1%;
      }
   
     .container {
@@ -463,7 +514,7 @@ section.about>div.container{
         padding-bottom: 10px /*separacion de palabra*/
         }       
         .post>ul li{
-        padding-inline:20px; /*ajustar el ancho de las publicaciones*/
+        padding-inline:10px; /*ajustar el ancho de las publicaciones*/
         padding-bottom: 25px;
         margin: 0% 40px /*ajustar la separacion de las publicaciones*/
         
@@ -478,6 +529,7 @@ section.about>div.container{
         div.container>h2{
             grid-column: 1/3;
             grid-row: 1/1;
+            margin: 0% auto
         }
         div.container>div.bio-info{
             grid-column: 1/2;
