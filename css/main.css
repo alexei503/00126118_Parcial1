@@ -286,9 +286,7 @@ footer .social-links {
 footer>.social-links>li>a>i{
     display: flex;
     padding-inline: 15px; 
-
     font-size: 2em ;
-    box-sizing: border-box;
     margin: 35% 0% 0%; 
    }
    footer>p{
@@ -296,15 +294,14 @@ footer>.social-links>li>a>i{
    }
 
 .contact-form>LABEL{
-    font-weight: 900;
-
+    font-weight: 900; /*darle mas fuerza de color ala tabla de contactar*/
 }
 
 section.about>div.container{
     
-    padding-bottom: 2em;
+    padding-bottom: 2em; /*para darle separacion al formulario de contacto*/
 }
-.green-area .post li{
+.green-area .post li{ /*para hacercar mas las publicaciones y hacerlas un poco mas pequenas*/
     box-sizing: border-box;
     margin-top: 2rem ;
     margin-bottom: 2rem;
@@ -315,7 +312,7 @@ section.about>div.container{
 
 
 .post article p{
-    line-height: 15px
+    line-height: 15px /*para hacer mas pequenos los espacion de las publicaciones*/
 }
 
 @media only screen and (min-width: 768px) {
@@ -378,31 +375,23 @@ section.about>div.container{
             box-sizing: content-box;
             margin: 2% 0% 2%;
          }
+
+         
            /*TODO: FALTA CSS */
-} 
-
-section.about>div.container{
-    display: grid; /*para formar celdas*/
-    grid-template-columns: 1fr 1fr ;
-    grid-gap: 50px;
-    grid-template: auto;
-    padding-bottom: 5em;
-}
-div.container>h2{
-    grid-column: 1/3;
-    grid-row: 1/1;
-    margin: 0% auto;
-}
-div.container>div.bio-info{
-    grid-column: 1/2;
-    grid-row: 2;
-}
-
-div.container>div.contact{
-    grid-column: 2/3;
-    grid-row: 2/2;
-    
-}
+           .green-area .post li{ /*para ajustar mejor las publicaciones*/
+            box-sizing: border-box;
+            margin: 5% 1%;
+        }     
+        .container>.header img{
+            box-sizing: border-box;
+            margin-top: 2em;
+            margin-left: 2em;
+            margin-right: 1em;
+        }
+        .green-area>.post h2{
+            margin-bottom: 0%;
+        }
+        } 
 
 @media only screen and (min-width: 1024px) {
 
@@ -413,11 +402,9 @@ div.container>div.contact{
 
        .container>.header img{
         margin-top: 2em;
+        margin-left: 5em;
     }
 
-    .container>.header nav{
-        margin-right: 8em;
-    }
 
     .big-hero>.container img{
         margin-bottom: 2em;
@@ -425,7 +412,7 @@ div.container>div.contact{
 
        .social-links{
            box-sizing: content-box;
-           margin: 1% 0% 1%;
+           margin: 4% 0% 1%;
         }
         .show-desktop i{
             font-size: 3em;
@@ -472,8 +459,17 @@ div.container>div.contact{
 
         }
         .contact-form>input[type=submit]{
-            width: 35%;
+            width: 35%; /*disminulle el tamano del boton*/
             font-weight: 100;
+        }
+
+        .green-area>.post h2{/*ajustando margen de el mensaje de publicacion*/
+            margin-top: 2%;
+            margin-bottom: 0%;
+        }
+        .green-area>.post li{/*ajustando margenes de las publicaciones*/
+            margin-top: 1%;
+            margin-bottom: 2%;
         }
 }
 
@@ -484,9 +480,6 @@ div.container>div.contact{
         margin-top: 2em;
     }
 
-    .container>.header nav{
-        margin-right: 10em;
-    }
 
     .big-hero>.container img{
         margin-bottom: 2em;
@@ -513,12 +506,7 @@ div.container>div.contact{
         .post>h2{
         padding-bottom: 10px /*separacion de palabra*/
         }       
-        .post>ul li{
-        padding-inline:10px; /*ajustar el ancho de las publicaciones*/
-        padding-bottom: 25px;
-        margin: 0% 40px /*ajustar la separacion de las publicaciones*/
-        
-        }
+
         section.about>div.container{
             display: grid; /*para formar celdas*/
             grid-template-columns: 1fr 1fr ;
@@ -546,7 +534,8 @@ div.container>div.contact{
             box-sizing: content-box;
             border: 1% 0% 2%;
         }
+        }
+        
 
         
         
-}
