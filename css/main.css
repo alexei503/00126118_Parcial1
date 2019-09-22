@@ -122,15 +122,15 @@ p{/*para ajustar el tamaño darle un tamaña y tamaño de la casilla de todos lo
     margin: 5rem auto;
 }
 
-.post ul li article {/**/
-    overflow: hidden;
+.post ul li article {/*de le da un borde circular , un color de fondo blanco, se alinia el texto hacia la izquierda y se */
+    overflow: hidden;/*le asicna un padding hacia abajo*/
     border-radius: 5px;
     background-color: #ffffff;
     text-align: left;
     padding-bottom: 2em ;
 }
 
-.post article img{/*se le configura el tamaño y se le configura el ancho */
+.post article img{/*se le configura el tamaño y se le configura el ancho y se configura para que la imagen abarque todo el espacio*/
     height: 150px;
     width: 100%;
     object-fit: cover;
