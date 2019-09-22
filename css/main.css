@@ -188,7 +188,7 @@ p{/*para ajustar el tamaño darle un tamaña y tamaño de la casilla de todos lo
     margin-top: 1.5em;
 }
 
-.contact-form { 
+.contact-form { /*se le añade una caja fexible y se acomodan como columnas*/
     display: flex;
     flex-direction: column;
 }
@@ -319,14 +319,14 @@ section.about>div.container{
 
 @media only screen and (min-width: 768px) {
   
-    .post ul {
+    .post ul { /*quitarle el estido de las listas, darle una caja flexible y darle una flex para emvolver y acomodarlo en el centro*/
         list-style: none;
         display: flex;
         flex-wrap: wrap;
         justify-content: center;
     }
     
-    .post ul li {
+    .post ul li {/*que tenga un maximo de altura y un min de altura y ajustar los margenes y ajustar los felixbles*/
         min-height: 350px;
         max-height: 3500px;
         margin: 1rem 2rem;
@@ -334,20 +334,21 @@ section.about>div.container{
     }
 
 
-    .logo {
+    .logo {/*ajustarle la altura y aumentar los margenes*/
         width: 150px;
         margin: 5em;
     }
 
-    .show-desktop {
+    .show-desktop {/*quitar el display*/
         display: block;
     }
 
-    .hide-desktop {
+    .hide-desktop { /*quitar el display*/
         display: none;
     }
 
-    .menu {
+    .menu {  /*se le da un color de fondo y que la posicion se statica se le ordena de orden descendiente y una altura y ancho*/
+            /*automatica y una caja fexlibe con un margen de arriba de un 1em*/
         background-color: #112935; 
         position: static;
         z-index: 20;
