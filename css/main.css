@@ -10,7 +10,7 @@
 }
 
 /* El estilo base para moviles */
-body {
+body {/*color de fondo el color de texto cambiando el texto aliniar el y modificar el tamaño de letra*/
     background-color: #112935;
     color: white;
     font-family: 'Montserrat', sans-serif;
@@ -18,16 +18,16 @@ body {
     font-weight: 400;
 }
 
-.header {
+.header {/*alinia respecto a un eje y ajustar los itens al centro de la pantalla con una separacion*/
     display: flex;
     justify-content: space-between
 }
 
-.src-only {
+.src-only { /*quitar el display*/
     display: none;
 }
 
-.hide-mobile {
+.hide-mobile {/*quita el display*/
     display: none;
 }
 
@@ -55,7 +55,7 @@ p{/*para ajustar el tamaño darle un tamaña y tamaño de la casilla de todos lo
     align-items: flex-start;
 
 }
-.options i:last-child {
+.options i:last-child {/*aumenta el tamaño*/
     font-size: 1.6rem;
 }
 
@@ -78,7 +78,7 @@ p{/*para ajustar el tamaño darle un tamaña y tamaño de la casilla de todos lo
 }
 
 /* Social links*/
-.social-links{ /*quitarle los estilo quitarle el padding darle un margen arriba poner una display manejable*/
+.social-links{ /*quitarle los estilos, quitarle el padding, darle un margen arriba poner una display manejable*/
     list-style: none;/*darle una direccion hacia abajo y posicionar de forma centrada*/
     padding: 0;
     margin-top: 3em;
@@ -177,24 +177,24 @@ p{/*para ajustar el tamaño darle un tamaña y tamaño de la casilla de todos lo
     letter-spacing: 2px;
 }
 
-.contact {
+.contact {/* */
     display: flex;
     flex-direction: column;
     text-align: left;
     padding: 0px 1em;
 }
 
-.contact * + * {
+.contact * + * {/*aumenta el margen  de arriba*/
     margin-top: 1.5em;
 }
 
-.contact-form {
+.contact-form { 
     display: flex;
     flex-direction: column;
 }
 
-.contact-form input, .contact-form textarea{
-    padding: 1rem 2rem;
+.contact-form input, .contact-form textarea{/*aumentar el tamaño del paddyn de arriba y abajo y quita el border*/ 
+    padding: 1rem 2rem; /*hacer un borde circular y aumentar un tamaño hacia arriba*/
     border: none;
     border-radius: 0px 2em;
     font-size: 1em;
@@ -203,7 +203,7 @@ p{/*para ajustar el tamaño darle un tamaña y tamaño de la casilla de todos lo
 
 /* Decorando placeholder */
 
-::-webkit-input-placeholder { 
+::-webkit-input-placeholder { /*marcador de posicion del texto*/
     color: #D7DEE6; 
 } 
  
@@ -214,26 +214,26 @@ p{/*para ajustar el tamaño darle un tamaña y tamaño de la casilla de todos lo
 :-ms-input-placeholder { color: #D7DEE6; }
 
 .contact-form input[type=submit] {
-    background-color: #F74442;
+    background-color: #F74442;/*se le pone un color de fondo se le da un color al texto y se le aumenta el tamaño*/
     font-weight: 400;
     color: white;
     font-size: 1rem;
 }
 
-.black-decoration{
+.black-decoration{/**/
     background-image: url("../images/decoracion_oscura_small.svg");
 }
 
-footer{
+footer{/*darle un color de fondo y daler color a las letas*/
     background-color: #0D5061;
     color:#D7DEE6;
 }
 
-footer .social-links {
+footer .social-links {/*quitar el margen*/
     margin: 0;
 }
 
-.menu {
+.menu {/*agrega color de fondo para indicar una posicionindicando el orden a los objetos y aumentar el tamaño y lo ancho*/
     background-color: #112935;
     position: absolute;
     z-index: 20;
@@ -243,18 +243,18 @@ footer .social-links {
     height: calc(100vh - 60px);
 }
 
-.menu {
+.menu {/*quitarle el stilo a las letras  aliniar el texto a la izquierda*/
     list-style: none;
     text-align: left;
     padding: 1em;
 }
-.menu li {
+.menu li { /*aumentar el tamaña del padding y el margen en top*/
     display: block;
     padding: 0.5em;
     margin-top: 5px;
 }
 
-.menu li a {
+.menu li a { /*cambiando de color de texto y quitandole la decoracion*/
     color: white;
     text-decoration: none;
     
@@ -262,21 +262,21 @@ footer .social-links {
 
 /* Pesonalizando estilo para tablets*/
 
-.social-links{
+.social-links{/*para darle un caja a la informacion y al ajustar los margenes de arriba alos lados y abajo*/
     box-sizing: content-box;
     margin: 1% 0% 2%;
  }
- .show-desktop i{
+ .show-desktop i{ /*ajustarle el tamaño ajustarle el margen hacia arriba alos lados nada y hacia abajo y darle un color*/
      font-size: 3em;
      margin: 1% 0% 5%;
      color: #0AC693;
 }
 
-.container>p{
+.container>p{ /*quitandole el padding*/
     padding: 0%
 }
-.container>.social-links>li>a>i{
- display: flex;
+.container>.social-links>li>a>i{/*ajustandole un a los lado un padding hacia abajo añadiendole el tamaño */
+ display: flex; /*anañdiendole un border y ajustandole los margenes de arriba y hacia abajo y alos lados*/
  padding-inline: 15px; 
  padding-bottom: 15px;
  font-size: 2em ;
@@ -284,13 +284,14 @@ footer .social-links {
  margin: 10% 0% 35%; 
 }
 
-footer>.social-links>li>a>i{
-    display: flex;
+footer>.social-links>li>a>i{/*ajustando el displey dandole dandole un padin alos lados ajustarle el tamaño */
+    display: flex;/*y ajustar el margen ariba y quitarle los margenes alos lado y al de abajo*/
     padding-inline: 15px; 
     font-size: 2em ;
     margin: 35% 0% 0%; 
    }
-   footer>p{
+
+   footer>p{ /*para quitarle el paddding*/
     padding-top: 0%;
    }
 
@@ -363,16 +364,16 @@ section.about>div.container{
         
         }
 
-        h2{
+        h2{/*se le aumenta la altura*/
             height: 50px;
         }
 
-        .contact-form>LABEL{
+        .contact-form>LABEL{/*se le aumente el color*/
             font-weight: 900;
 
         }
 
-        .social-links{
+        .social-links{/*se le añade una caja mas y se ajustan los margenes de ariba y abajo y al de los lado se quitan*/
             box-sizing: content-box;
             margin: 2% 0% 2%;
          }
@@ -383,48 +384,48 @@ section.about>div.container{
             box-sizing: border-box;
             margin: 5% 1%;
         }     
-        .container>.header img{
+        .container>.header img{/*se le añade un border se le ajusta los margenes de ariba ,derecha,izquierda*/
             box-sizing: border-box;
             margin-top: 2em;
             margin-left: 2em;
             margin-right: 1em;
         }
-        .green-area>.post h2{
+        .green-area>.post h2{/*se le quita el margen de abajo*/
             margin-bottom: 0%;
         }
 
-        .big-hero h2{
+        .big-hero h2{/*se le aumenta el tamaño*/
             font-size: 1.8em;
         }
         } 
 
 @media only screen and (min-width: 1024px) {
 
-    h2{
+    h2{/*se le aummenta la autura*/
         height: 50px;
     }
        /*TODO: FALTA CSS */
 
-       .container>.header img{
+       .container>.header img{/*se les ajustan los margenes de ariba y abajo*/
         margin-top: 2em;
         margin-left: 5em;
     }
 
 
-    .big-hero>.container img{
+    .big-hero>.container img{/*se le ajusta el margen de abajo*/
         margin-bottom: 2em;
     }
 
-       .social-links{
+       .social-links{/*se le ajusta el margen de arriba y abajo*/
            box-sizing: content-box;
            margin: 4% 0% 1%;
         }
-        .show-desktop i{
-            font-size: 3em;
+        .show-desktop i{/*se le cambia de color ala flecha, se le ajusta el margen de arriba y abajo y lo de los lados se quitan*/
+            font-size: 3em; /*y se le da color alas letras*/
             margin: 1% 0% 5%;
             color: #0AC693;
        }
-       .social-links>li>a>i{
+       .social-links>li>a>i{/*le da un padding hacia los lados , aumenta el tamaño, se mele crea un border , y se ajusta el margen de arriba*/
         display: flex;
         padding-inline: 30px; 
         font-size: 2em ;
@@ -432,10 +433,7 @@ section.about>div.container{
         margin: 30% 0% 0%; 
     }
        
-       #menu li a:hover{
-        color:#ff0000;
-        
-        }
+      
 
         section.about>div.container{
             display: grid; /*para formar celdas*/
@@ -444,22 +442,22 @@ section.about>div.container{
             grid-template: auto;
             padding-bottom: 5em;
         }
-        div.container>h2{
+        div.container>h2{/*asigna las pociciones segun las columnas y filas*/
             grid-column: 1/3;
             grid-row: 1/1;
             margin: 1% auto 0%;
         }
-        div.container>div.bio-info{
+        div.container>div.bio-info{/*asigna las pociciones segun las columnas y filas*/
             grid-column: 1/2;
             grid-row: 2;
         }
 
-        div.container>div.contact{
+        div.container>div.contact{/*asigna las pociciones segun las columnas y filas*/
             grid-column: 2/3;
             grid-row: 2/2;
             
         }
-        .contact-form>LABEL{
+        .contact-form>LABEL{/*aumenta la fuerza del color*/
             font-weight: 900;
 
         }
@@ -482,30 +480,28 @@ section.about>div.container{
 @media only screen and (min-width: 1440px) {
 
     /*TODO: FALTA CSS */
-    .container>.header img{
+    .container>.header img{/*asigna un margen hacia arriba*/
         margin-top: 2em;
     }
 
 
-    .big-hero>.container img{
+    .big-hero>.container img{/*hacina un margen hacia abajo*/
         margin-bottom: 2em;
     }
     
-    .social-links{
+    .social-links{/*asiguna una caja y ajusta el margen de arriba y abajo y de los lados los quita*/
         box-sizing: content-box;
         margin: 2% 0% 1%;
      }
   
-    .container {
-        width: 80%;
+    .container {/*asigna un tamaño de anchura no margen hacia arriba y asigna automaticamente a los lados*/
+        width: 80%; /*y da un maximo de anchura de 1440px*/
         margin: 0 auto;
         max-width: 1440px;
     }
 
 
-    #menu li a:hover{
-        color:#ff0000; /*darle color alas letras*/
-        }
+  
 
         
 
